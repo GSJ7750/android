@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kch.proj_manager_v3">
+
+    <application
+        android:allowBackup="true"
+        android:descendantFocusability="blocksDescendants"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/zoom4"
+        android:label="찾아zoom"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true">
+        <activity android:name="com.example.register.CopyrightActivity"></activity>
+        <activity android:name="com.example.register.PictureDetailActivity" />
+        <activity
+            android:name="com.example.register.BookMarkDetailActivity"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name="com.example.register.BookmarkActivity"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name="com.example.register.PublicDataActivity"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name="com.example.register.ListmapActivity" />
+        <activity
+            android:name="com.example.register.ListDetailActivity"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name="com.example.register.CmDeleteActivity" />
+        <activity android:name="com.example.register.CommunityContentActivity"/>
+        <activity android:name="com.example.register.CommunityWriteActivity" />
+        <activity android:name="com.example.register.CommunityActivity" />
+        <activity android:name="com.example.register.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.register.MainActivity" />
+        <activity android:name="com.example.register.LoginActivity" />
+        <activity
+            android:name="com.example.register.RegisterActivity"
+            android:theme="@style/AppTheme.SlidrActivityTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.register.ManagementActivity"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>
